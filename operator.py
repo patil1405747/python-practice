@@ -1,4 +1,4 @@
-a=7
+'''a=7
 b=3
 
 num1=int(input("Enter a first number:"))
@@ -17,4 +17,4 @@ print("Module of",num1,"%",num2,"%",num1%num2)
 #FLOOR
 print("question of",num1,"//",num2,"//",num1//num2)
 #EXPONTATION
-print("expontation of",num1,"**",num2,"* *",num1**num2)
+print("expontation of",num1,"**",num2,"* *",num1**num2)'''

@@ -9,9 +9,10 @@ print("y" in "gayatri")
 print("r" in "gayatri")
 print("GAYATRI" in "gayatri")
 
+
 #not in operator
 age="22"
-print("2" not in "1")
+print("2" not in "22")
 print( "5" not in "22")
 print("23" not in "22")
 print("10" not in "22")

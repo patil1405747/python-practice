@@ -56,7 +56,7 @@ print(j)
 #<<= right shift  equal to operator
 k=5
 k<<=2
-print(h)
+print(k)
 
 #>>= left shift equal to operator
 l=6
