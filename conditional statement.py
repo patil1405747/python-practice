@@ -1,4 +1,4 @@
-number=30
+'''number=30
 if(number>10):
  print("number is greater than 10")
 #writep m to check whether a person is eligible to vote (age must be 18 or above)
@@ -26,6 +26,7 @@ if(number%2==0):
   print(f"{number} is odd")
 else:
   (f"{number} is odd")
+
 # Write a program to check whether a number is positive or non-positive
 num=-23 
 if(num>0):
@@ -193,19 +194,17 @@ else:
 # Nested if statement
 #. Write a program to check a username first and then check the password only if the username is correct
  # Predefined correct username and password
-correct_username = "admin"
-correct_password = "1234"
+username_correct = "admin"
+password_correct = "1234"
 
-# Get username input
 username = input("Enter username: ")
 
-if username == correct_username:
+if username == "correct_username":
     print("Username correct!")
     
-    # Check password only if username is correct
     password = input("Enter password: ")
     
-    if password == correct_password:
+    if password == "correct_password":
         print("Login Successful!")
     else:
         print("Incorrect Password!")
@@ -232,10 +231,11 @@ else:
 # Pass and Distinction Check Program
 marks = int(input("Enter student marks (0-100): "))
 
+marks = int(input("Enter student marks (0-100): "))
+
 if marks >= 35:
     print("Result: Pass")
     
-    # Check for distinction only if the student has passed
     if marks >= 75:
         print("Status: Distinction! ")
     else:
@@ -252,10 +252,71 @@ if num > 0:
     else:
         print("The number is positive and odd.")
 else:
-    print("The number is not positive.")
+    print("the number is not positive.")
+
+#. logical operator
+#Write a program to check whether a number is between 10 and 50 inclusive
+number =45
+if(number>10 and number<50):
+    print(f"{number} is between 10 and 50")
+
+ # 28=num=21
+if(num%3==0  or num%7==0):
+    print(f"{num} is divisible by 3 and 7")
+
+
+#29
+# age=35
+# qualification="bca"
+# if(age>=21 and age<=35 and qualifcation=="bca"):
+    print("eligible for job")
+
+#30
+char="0"
+if(char=="a" or char=="0" or char=="u" or char=="i" or char=="e"):
+    print(f"{char} character is vowel")
+
+ #31
+num=203
+if(num<100 or num>200):
+    print(f"{num} is not between 100 and 200")   
+
+ #32
+thoery="pass"
+practical="fail"
+if(thoery=="pass" and practical=="pass"):
+   print("pass")
+
+#33
+order_amt=600
+premium="no"
+if(order_amt>=500 or premium=="yes"):
+   print("free delivery")  
+
+#Advance conditional statement    
+
+ #34
+a=45
+b=65
+c=87
+d=100
+if(a>b and a>c and a>d):
+   print(f"{a}is greatest number")
+elif(b>a and b>c and b>d):
+   print(f"{b} is greatest number")
+elif(c>a and c>b and c>d):
+   print(f"{c} is greatest number")
+else:
+   print(f"{d}is greatest number")
+
+#35
+service=9
+if(service>=10 and service<=20):
+   print("15% bonus")
+elif(service>=5 and service<=10):
+   print("10% bonus")  
+elif(service<5):
+   print("5% bonus")
+else:
+   print("enter under 20 year experience")'''
    
-  
-  
-      
-
-
