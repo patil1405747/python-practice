@@ -20,6 +20,4 @@ s="hello"
 print(s.find("1"))
 print(s.find("z"))
 
-s="hello"
-print(s.in
 
