@@ -2,6 +2,10 @@
 tuple=(4,5,3,7,8)
 print(tuple)
 
+# creating tuple using ,
+tuple=23,54,67,12,43,56
+print(tuple)
+
 #tuple is immutable(cannot be changed)
 '''tuple=(20,40,30,45,10,15)
 tuple[0]=6
