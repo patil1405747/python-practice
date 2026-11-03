@@ -121,14 +121,10 @@ print("Positive", positive)
 print("Negative", negative) 
 
 
-#Sort a list without using sort()
-mylist = [40, 10, 30, 20, 50]
-
-for i in range(len(mylist)):
-    for j in range(i + 1, len(mylist)):
-        if mylist[i] > mylist[j]:
-            mylist[i], mylist[j] = mylist[j], mylist[i]
-print(mylist)
+#avg of 3 students
+marks = [85, 90, 75]
+average = sum(marks) / len(marks)
+print("Student Average:", average)
 
 
 #tuple
@@ -170,4 +166,40 @@ print(min(my_tuple))
 #sum of  tuple
 my_tuple=(10,54,23,25,43,42,40,60)
 print(sum(my_tuple))
+
+#Dict
+#Display All Keys and Values of a Dictionary
+students = {"Rahul": 85, "Sneha": 90,"Arun": 75, "Priya": 95}
+for name, marks in students.items():
+    print(name, marks)
+
+#  total student marks
+students={"rahul": 85,"sneha":90,"arun":75,"priya":95}
+total=sum(students.values())
+print("total marks:",marks)  
+
+#check key exist
+students={"name":"rahul","age":21}
+if "name" in students:
+    print("key exist")
+else:
+    print("not exist")
+
+#Students Who Scored Above 60
+students={"rahul":85,"sneha":90,"arun":75,"priya":95}
+for name, marks in students.items():
+    if marks > 60:
+        print(name,marks)
+
+#  Count the Number of Students Who Passed
+# students={"rahul":85,"sneha":90,"arun":75,"priya":95}
+count=0
+for name, marks in students.items():
+    if marks >=35:
+        count +=1
+print("passed students:",count)
+
+#find dictionary length
+student = {"name": "Rahul", "age": 21, "marks": 85}
+print(len(student))
 
