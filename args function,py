@@ -1,0 +1,94 @@
+#a*args function
+
+#simple *args
+def add(*args):
+    print(args)
+add(10,20,30,40)
+
+#addition *args
+def add(*args):
+    sum=0
+    for i in args:
+        sum=sum+i
+    print(sum)  
+add(10,20,30)    
+
+#print multiple names
+def names(*args):
+    for i in args:
+        print(i)
+names("gayatri","anuja","swati")
+
+#Multiplication using *args
+def multi(*args):
+    result=1
+    for i in args:
+        result=result*i
+        print( "multiplication:",result)
+multi(2,3,4,5)     
+
+
+#find large number
+def larger(*args):
+    print("larger:",max(args))
+larger(23,65,12) 
+
+#** kwargs 
+def student(**kwargs):
+    print(kwargs)
+student(name="gayatri", age=21,city="pune")
+
+
+#using both *args and **kwargs
+def student(*args, **kwargs):
+    print("Marks:", args)
+    print("Details:", kwargs)
+
+student(80, 90, 85, name="Amit", age=21, city="Belagavi")
+
+
+#local and global variable
+def student():
+    name="gayatri"
+    print("name",name)
+student()
+
+def add():
+    a=10
+    b=20
+    print("add:",a+b)
+add()
+
+#global variable
+a=10
+def change():
+    global a
+    a=50
+print("inside fnction:",a)
+change()
+print("outside function",a)
+
+age=22
+def info():
+    print("age:",age)
+info() 
+print(age)
+
+#nested function
+def outer():
+    print("this is outside function")
+    def inner():
+        print("thi is uter function")
+        inner()
+        outer()
+
+def outer():
+    name="gayatri"
+    print(name)
+    def inner():
+         print("name:",name)
+    inner()
+outer()             
+
+
+
